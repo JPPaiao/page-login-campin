@@ -73,6 +73,7 @@ body {
 }
 
 input {
+    color: var(--text-base);
     width: 100%;
     background-color: var(--background);
     padding: 10px;
@@ -138,6 +139,7 @@ input::placeholder {
 
 input[type='submit'] {
     background-color: var(--primary-color);
+    color: var(--background);
     margin-bottom: 14px;
     border: none;
     font-weight: bold;
