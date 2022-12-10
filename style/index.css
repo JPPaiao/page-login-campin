@@ -30,7 +30,7 @@ body {
 
 .form-sect {
     margin: auto;
-    max-width: 350px;
+    max-width: 340px;
     display: flex;
     flex-direction: column;
 }
@@ -38,6 +38,7 @@ body {
 .logo {
     position: absolute;
     top: 40px;
+    left: 40px;
 }
 
 .cont-top {
@@ -140,6 +141,7 @@ input[type='submit'] {
     margin-bottom: 14px;
     border: none;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .register {
@@ -162,17 +164,26 @@ a {
         background-color: var(--form-background);
     }
 
+    .container {
+        display: flex;
+    }
+
     .cont-sect {
-        background: var(--form-background);
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 512px;
-        width: 572px;
+        width: 100%;
     }
 
-    .container {
-        display: flex;
+    .form-sect {
+        background: var(--form-background);
+        padding: 22px 15%;
+        margin: 0;
+        max-width: none;
+    }
+
+    .img {
+        width: 100%;
     }
 
     .img > img {
