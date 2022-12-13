@@ -65,6 +65,17 @@ body {
     width: 100%;
 }
 
+.inpt-icon {
+    width: 100%;
+
+}
+
+.icon {
+    position: absolute;
+    padding: 12px 10px;
+    text-align: center;
+}
+
 .inp-pass {
     display: flex;
     justify-content: space-between;
@@ -76,7 +87,7 @@ input {
     color: var(--text-base);
     width: 100%;
     background-color: var(--background);
-    padding: 10px;
+    padding: 10px 38px;
     border-radius: 4px;
     margin-top: 5px;
     border: 1px solid var(--text-base);
