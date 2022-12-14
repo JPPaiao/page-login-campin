@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +16,9 @@
         <section class="cont-sect">
             <div class="form-sect">
                 <div class="logo">
-                    <img src="assets/logo.svg" alt="Logo da marca">
+                    <a href="#">
+                        <img src="assets/logo.svg" alt="Logo da marca">
+                    </a>
                 </div>
                 <div class="form-header">
                     <div class="cont-top">
@@ -29,16 +31,27 @@
                     <div class="form-inps">
                         <label for="email">E-mail
                             <div class="inpt-icon">
-                                <img class="icon" src="assets/mail.svg">
-                                <input type="email" id="email" placeholder="Digite seu e-mail">
+                                <img src="assets/mail.svg" class="icon email">
+                                <input
+                                    type="email"
+                                    class="email"
+                                    placeholder="Digite seu e-mail"
+                                    onfocus={focusElement(this)}
+                                >
                             </div>
                         </label>
                     </div>
                     <div class="form-inps">
                         <label for="password">Senha
-                            <div class="inpt-i">
-                                <img src="assets/lock.svg" class="icon">
-                                <input type="password" id="password" placeholder="Digite sua senha">
+                            <div class="inpt-icon">
+                                <img src="assets/lock.svg" class="icon password">
+                                <input
+                                    type="password"
+                                    class="password"
+                                    placeholder="Digite sua senha"
+                                    onclick={focusElement(this)}
+                                >
+                                <img src="assets/eye.svg" class="icon eye">
                             </div>
                         </label>
                     </div>
@@ -57,9 +70,10 @@
                 </form>
             </section>
             <section class="img">
-                <img src="assets/side-image.jpg" alt="Imagem de uma caminhonete no mato de frente pro rio">
+                <!-- <img src="assets/side-image.jpg" alt="Imagem de uma caminhonete no mato de frente pro rio"> -->
             </section>
         </div>
     </div>
+    <script src="js/index.js" ></script>
 </body>
 </html>
