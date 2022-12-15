@@ -31,12 +31,13 @@
                     <div class="form-inps">
                         <label for="email">E-mail
                             <div class="inpt-icon">
-                                <img src="assets/mail.svg" class="icon email">
+                                <img src="assets/mail-focus.svg" class="icon">
+                                <img src="assets/mail.svg" class="icon icon-email">
                                 <input
                                     type="email"
-                                    class="email"
+                                    class="email focus"
                                     placeholder="Digite seu e-mail"
-                                    onfocus={focusElement(this)}
+                                    onfocus="focusElement('email')"
                                 >
                             </div>
                         </label>
@@ -44,12 +45,13 @@
                     <div class="form-inps">
                         <label for="password">Senha
                             <div class="inpt-icon">
-                                <img src="assets/lock.svg" class="icon password">
+                                <img src="assets/lock-focus.svg" class="icon">
+                                <img src="assets/lock.svg" class="icon icon-password">
                                 <input
                                     type="password"
-                                    class="password"
+                                    class="password focus"
                                     placeholder="Digite sua senha"
-                                    onclick={focusElement(this)}
+                                    onfocus="focusElement('password')"
                                 >
                                 <img src="assets/eye.svg" class="icon eye">
                             </div>

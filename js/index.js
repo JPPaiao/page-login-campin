@@ -1,14 +1,13 @@
-// let element = document.getElementsByClassName('icon')
+function focusElement(clas) {
+    let element = document.getElementsByClassName(clas)
+    let icon = document.getElementsByClassName(`icon-${clas}`)
 
-
-// console.log(element)
-
-function focusElement(inpt) {
-    let element = document.getElementsByClassName(`${inpt.className}`)
-
-    console.log(element[0])
-    if (inpt.className == 'email') {
-        element[0].src = 'assets/mail-focus.svg'
+    console.log(element)
+    console.log(icon)
+    if (element[0].onfocus != null) {
+        icon[0].style = 'display: none;'
+    } else {
+        console.log('ok')
     }
 
 }
