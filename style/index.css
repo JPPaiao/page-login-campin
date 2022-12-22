@@ -75,8 +75,6 @@ body {
     top: 1px;
 }
 
-
-
 .icon {
     position: absolute;
     padding: 12px 10px;
@@ -107,11 +105,6 @@ input::placeholder {
 
 input:focus {
     border: 2px solid var(--primary-color);
-}
-
-.focus-icon {
-    z-index: 1;
-    opacity: 1;
 }
 
 .inp-check {
