@@ -75,6 +75,8 @@ body {
     top: 1px;
 }
 
+
+
 .icon {
     position: absolute;
     padding: 12px 10px;
@@ -99,12 +101,17 @@ input {
     outline: none;
 }
 
+input::placeholder {
+    color: var(--text-base);
+}
+
 input:focus {
     border: 2px solid var(--primary-color);
 }
 
-input::placeholder {
-    color: var(--text-base);
+.focus-icon {
+    z-index: 1;
+    opacity: 1;
 }
 
 .inp-check {
